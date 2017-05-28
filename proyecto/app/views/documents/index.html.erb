@@ -2,7 +2,7 @@
 
 <h1>Documents</h1>
 
-<table>
+<table class = "table table-bordered table-hover">
   <thead>
     <tr>
       <th>Title</th>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= document.title %></td>
         <td><%= document.text %></td>
-        <td><%= link_to 'Show', document %></td>
+        <td><%= link_to 'Show', document%></td>
         <td><%= link_to 'Edit', edit_document_path(document) %></td>
         <td><%= link_to 'Destroy', document, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -26,4 +26,5 @@
 
 <br>
 
-<%= link_to 'New Document', new_document_path %>
+
+<%= link_to 'New Document', new_document_path, class: "btn btn-primary" %>

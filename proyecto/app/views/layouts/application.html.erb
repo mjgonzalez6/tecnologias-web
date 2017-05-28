@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Preyecto</title>
+    <title>Proyecto</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+
   <%if person_signed_in? %>
-    <%= link_to('Log out' , destroy_person_session_path, :method => :delete) %>
+
+    <%= render 'layouts/navbar' %>
   <% end %>
+
+  <body>
+    <% unless notice.nil? %>
+      <div class="alert alert-success notice"><%= notice %></div>
+    <% end %>
+    <% unless alert.nil? %>
+      <div class="alert alert-warning"><%= alert %></div>
+    <% end %>
+  </body>
+
 
   <body>
     <%= yield %>
