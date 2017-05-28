@@ -1,4 +1,5 @@
 <p id="notice"><%= notice %></p>
+<h1>Documents:</h1>
 
 <p>
   <strong>Title:</strong>
@@ -10,13 +11,11 @@
   <%= @document.text %>
 </p>
 
-
-
-
-<%= markdown(@document.text) %>
-
-
-
+<p>
+  <h1>Markdown:</h1>
+  _____________________________________________________________
+    <%= markdown(@document.text) %>
+</p>
 
 
 <%= link_to 'Edit', edit_document_path(@document) %> |
