@@ -5,6 +5,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+
 }
 
 p, ol, ul, td {
@@ -46,6 +47,7 @@ td {
 div {
   &.field, &.actions {
     margin-bottom: 10px;
+
   }
 }
 
