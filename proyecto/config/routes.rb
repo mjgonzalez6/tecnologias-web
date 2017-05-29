@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :documents
+  root to: 'documents#index'
   devise_for :people, path: 'auth'
   devise_scope :person do
     get 'auth', to: 'devise/registrations#new'
@@ -6,10 +8,9 @@ Rails.application.routes.draw do
   authenticate :person do
   resources :assignments
   resources :managements
-  resources :documents
   resources :categories
   resources :people
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'documents#index'
+
 end
 end
