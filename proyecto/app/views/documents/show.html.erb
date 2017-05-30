@@ -17,6 +17,7 @@
     <%= markdown(@document.text) %>
 </p>
 
-
-<%= link_to 'Edit', edit_document_path(@document) %> |
+<%if person_signed_in? %>
+<%= link_to 'Edit', edit_document_path(@document) , class: "btn btn-primary" %>
+<% end %>
 <%= link_to 'Back', documents_path, class: "btn btn-danger"  %>

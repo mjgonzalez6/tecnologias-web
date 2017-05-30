@@ -3,9 +3,17 @@ class DocumentsController < ApplicationController
 
   # GET /documents
   # GET /documents.json
+  #def index
+  #  @documents = Document.all
+  #end
   def index
-    @documents = Document.all
+    if !params[:search].nil?
+      @documents = Document.where("title like ?", "%#{params[:search]}%")
+   else
+      @documents = Document.all
+    end
   end
+
 
   # GET /documents/1
   # GET /documents/1.json
