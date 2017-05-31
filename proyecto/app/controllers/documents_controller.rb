@@ -14,6 +14,14 @@ class DocumentsController < ApplicationController
     end
   end
 
+  def publico
+    
+     if @document.is_public?
+       format.html { render :show}
+     else
+     end
+  end
+
 
   # GET /documents/1
   # GET /documents/1.json
@@ -77,6 +85,6 @@ class DocumentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def document_params
-      params.require(:document).permit(:title, :text)
+      params.require(:document).permit(:title, :text, :is_public)
     end
 end

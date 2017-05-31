@@ -11665,3 +11665,2784 @@ Processing by DocumentsController#index as HTML
 Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddIsPublicToDocuments (20170531002558)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.3ms)[0m  [1m[35mALTER TABLE "documents" ADD "is_public" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170531002558"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_document_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_document_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_managements_on_document_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_managements_on_document_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_managements_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_managements_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (8.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+Started GET "/people" for 127.0.0.1 at 2017-05-30 20:32:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/auth/sign_in" for 127.0.0.1 at 2017-05-30 20:32:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.1ms)
+  Rendered layouts/_navbar.html.erb (7.5ms)
+Completed 200 OK in 961ms (Views: 939.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 179ms (Views: 171.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 20:32:10 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:11 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (4.3ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:13 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:15 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (4.9ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:17 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 20:32:18 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:17:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/sign_in" for 127.0.0.1 at 2017-05-30 21:17:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2017-05-30 21:17:25 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAiEU8k6DqXqmXZynZZGwqh1YBbBAzFzwFBM3nINbxtddXL001PhNWebEPAxft5xf6SHCrMzP/E4dP94aXDavQ==", "person"=>{"email"=>"diego@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["email", "diego@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  [1m[33mUPDATE "people" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["current_sign_in_at", "2017-05-31 01:17:26.026385"], ["last_sign_in_at", "2017-05-30 21:01:14.542732"], ["sign_in_count", 5], ["updated_at", "2017-05-31 01:17:26.029920"], ["id", 5]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 374ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 21:17:26 -0400
+  [1m[36mPerson Load (2.7ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (5.5ms)
+Completed 200 OK in 143ms (Views: 137.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:17:37 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (7.7ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:17:39 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 96ms (Views: 94.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-30 21:17:42 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (31.2ms)
+  Rendered documents/new.html.erb within layouts/application (32.6ms)
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/documents" for 127.0.0.1 at 2017-05-30 21:17:52 -0400
+Processing by DocumentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9y7iV3xwclLToHEdhpPj+QTYp4vhSwNAlIEIIT+bYTREQIsNQn4+CVog5T6/FiXoNk9fzGgWxlYF0fsemwAEXQ==", "document"=>{"title"=>"Publico si", "text"=>"asfdsdafsdaasfdfads", "is_public"=>"true"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDocument Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "documents" WHERE "documents"."title" = ? LIMIT ?[0m  [["title", "Publico si"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "documents" ("title", "text", "created_at", "updated_at", "is_public") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Publico si"], ["text", "asfdsdafsdaasfdfads"], ["created_at", "2017-05-31 01:17:53.013946"], ["updated_at", "2017-05-31 01:17:53.013946"], ["is_public", "t"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/documents/3
+Completed 302 Found in 42ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/documents/3" for 127.0.0.1 at 2017-05-30 21:17:53 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 109ms (Views: 102.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:17:56 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:18:24 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (5.3ms)
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:18:41 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 149ms (Views: 147.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-30 21:19:04 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.1ms)
+  Rendered documents/new.html.erb within layouts/application (8.2ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (9.9ms)
+Completed 200 OK in 135ms (Views: 131.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/documents" for 127.0.0.1 at 2017-05-30 21:19:10 -0400
+Processing by DocumentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T0x1kbp6vcbBCP9rk+EkbMusdBeJPvhLfg4OgcdK46f8IhzLhHTxnUiIa0iqZOJ9+TuMUABjPV3vXv2+Y9GGzg==", "document"=>{"title"=>"no publico", "text"=>"afsdsafdfsdasafd", "is_public"=>"false"}, "button"=>""}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDocument Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "documents" WHERE "documents"."title" = ? LIMIT ?[0m  [["title", "no publico"], ["LIMIT", 1]]
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "documents" ("title", "text", "created_at", "updated_at", "is_public") VALUES (?, ?, ?, ?, ?)[0m  [["title", "no publico"], ["text", "afsdsafdfsdasafd"], ["created_at", "2017-05-31 01:19:10.278024"], ["updated_at", "2017-05-31 01:19:10.278024"], ["is_public", "f"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/documents/4
+Completed 302 Found in 24ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/documents/4" for 127.0.0.1 at 2017-05-30 21:19:10 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (6.3ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:19:11 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/auth/sign_out" for 127.0.0.1 at 2017-05-30 21:19:16 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HSA7WVN7QZrBg+u/07PKirrFX2PUjvIPJT9XtGxjEVTqZIxtTMVDy4FxhJA1JVnpx7WooiyTq1dm54+n4dVbHA=="}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:19:16 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 124ms (Views: 123.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:22:16 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (435.6ms)
+Completed 500 Internal Server Error in 441ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `documents' for #<#<Class:0x007fbcd58e4330>:0x007fbcd00c7c60>
+Did you mean?  document
+               @documents):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if documents.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224460596100'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224460596100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:22:33 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for #<Document::ActiveRecord_Relation:0x007fbcd0255550>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @documents.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224461340880'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224461340880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:23:19 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (29.7ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for #<Document::ActiveRecord_Relation:0x007fbcd01b5dc0>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @documents.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224461014460'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224461014460'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:23:50 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (27.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Document::ActiveRecord_Relation:0x007fbcd5399240>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @documents.is_public  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224503927060'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224503927060'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:24:17 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (25.8ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Document::ActiveRecord_Relation:0x007fbcd5508838>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @documents.is_public  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224504678060'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224504678060'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:25:07 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Document::ActiveRecord_Relation:0x007fbcd5ba2770>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @documents.is_public  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224508132140'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224508132140'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:27:56 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224508444440'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224508444440'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:30:17 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (3.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (48.6ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 4.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224502583520'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224502583520'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:30:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224561935200'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224561935200'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:32:16 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:32:22 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navbar.html.erb (5.7ms)
+Completed 200 OK in 105ms (Views: 104.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:32:38 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 109ms (Views: 94.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/documents/2" for 127.0.0.1 at 2017-05-30 21:32:41 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  Rendered documents/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:32:54 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (2.0ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public?  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224561827820'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224561827820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:33:38 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224394478100'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224394478100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:34:08 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public=' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public = 'true'  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224461108660'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224461108660'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:34:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public=' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public = 'true'  %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224393702160'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224393702160'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:34:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public=' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public = true %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224461594240'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224461594240'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:34:29 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (21.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public == true %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_21025480'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_21025480'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:36:43 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (238.2ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for #<#<Class:0x007fbcd63837f0>:0x007fbcd5792f40>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224506057040'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224506057040'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:36:52 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 145ms (Views: 143.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:42:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224506898240'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224506898240'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:42:19 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (4.6ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 5.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224577462180'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224577462180'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:42:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224509560860'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224509560860'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:42:29 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224398022100'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224398022100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:42:30 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224511757620'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224511757620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:44:40 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.5ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (28.8ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224511835620'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224511835620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:44:50 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  Rendered documents/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/diego/tecnologias-web/proyecto/app/views/documents/index.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/documents/index.html.erb:41: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:44:56 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/sign_in" for 127.0.0.1 at 2017-05-30 21:45:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 133ms (Views: 114.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2017-05-30 21:45:02 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CROFRDFe9/6Z44ft3Jy4Rl91bRXDyFqn0RxGBzw48VO64JpQeihrhTTQX5SZcdp2XlbftY0bpOrbmVkxGpZ7iA==", "person"=>{"email"=>"diego@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["email", "diego@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "people" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["current_sign_in_at", "2017-05-31 01:45:02.454575"], ["last_sign_in_at", "2017-05-31 01:17:26.026385"], ["sign_in_count", 6], ["updated_at", "2017-05-31 01:45:02.455520"], ["id", 5]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 344ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:45:02 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/documents/1" for 127.0.0.1 at 2017-05-30 21:45:07 -0400
+Processing by DocumentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Whl+8Bg4u0iGjgJlfjAlWlB8cvEKdXasfXY/Ki17mQInzwo9w+oGCoEVaPPriDzf+95u+E+q9mjuUa3CpSIYwg==", "id"=>"1"}
+  [1m[36mDocument Load (0.9ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[31mDELETE FROM "documents" WHERE "documents"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/documents
+Completed 302 Found in 17ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:45:07 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.5ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_navbar.html.erb (5.7ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/documents/2" for 127.0.0.1 at 2017-05-30 21:45:09 -0400
+Processing by DocumentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DaOEJHATtNqbarYmOETNZ1tVABldZGiy+MBY4ZGUEOhwdfDpq8EJmJzx3LCt/NTi8PccEBi76HZr58oJGc2RKA==", "id"=>"2"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[31mDELETE FROM "documents" WHERE "documents"."id" = ?[0m  [["id", 2]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/documents
+Completed 302 Found in 15ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 21:45:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navbar.html.erb (4.6ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/auth/sign_out" for 127.0.0.1 at 2017-05-30 21:45:12 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4CfdopiPb430VniZf4ZnhBCypmWszDMzUq8wL0GbrYOd8alvQ13Sz/PNEg/qPn4BuxC6bOkTs/fBiKLHycIsQw=="}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:45:12 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:45:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224513335980'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224513335980'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:48:41 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `public' for nil:NilClass
+Did you mean?  public_send):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.public %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224460652640'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224460652640'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:48:43 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `public' for nil:NilClass
+Did you mean?  public_send):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.public %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_28111280'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_28111280'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:00 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 8.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224396258880'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224396258880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:08 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (13.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico_method' for nil:NilClass
+Did you mean?  public_method
+               public_methods):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico_method %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224400901560'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224400901560'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico_method' for nil:NilClass
+Did you mean?  public_method
+               public_methods):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico_method %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224401998280'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224401998280'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:25 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224512339740'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224512339740'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:51 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224574051840'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224574051840'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:49:53 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224577054220'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224577054220'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:54:30 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224399555020'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224399555020'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:55:03 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (5.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico?' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224395613220'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224395613220'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:55:58 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___3964054319515956308_70224509861040'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___3964054319515956308_70224509861040'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_document_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_document_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_managements_on_document_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_managements_on_document_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_managements_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_managements_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:59:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (37.4ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_22990040'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_22990040'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (17.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 21:59:27 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_38207660'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_38207660'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:01:09 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_35032840'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_35032840'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:03:04 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_25265400'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_25265400'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:03:22 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_18187200'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_18187200'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:04:22 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for #<Class:0x0000000309a5d0>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if Document.is_public?%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_37453460'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_37453460'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:04:32 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (25.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Class:0x0000000309a5d0>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if Document.is_public%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_35361500'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_35361500'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:05:41 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Class:0x0000000309a5d0>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if Document.is_public%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_32969140'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_32969140'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:06:49 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (22.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for #<Class:0x0000000309a5d0>):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if Document.is_public%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_25658000'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_25658000'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:07:05 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document_params.is_public%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_15396220'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_15396220'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:07:06 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document_params.is_public%>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_36431420'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_36431420'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:07:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document_params.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_34083200'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_34083200'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:07:21 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document_params.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_31513180'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_31513180'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:10:51 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document_params.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_18977100'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_18977100'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:13:57 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_32585300'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_32585300'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:13:59 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_37349500'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_37349500'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:14:00 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_36631040'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_36631040'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:14:12 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_24791400'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_24791400'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:14:13 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `publico' for nil:NilClass
+Did you mean?  public_method):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.publico %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_34899780'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_34899780'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:14:42 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_70130776906260'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_70130776906260'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:14:43 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_70130781124880'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_70130781124880'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:17:05 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_public?' for nil:NilClass):
+    15:   <tbody>
+    16:     <% @documents.each do |document| %>
+    17:       <tr>
+    18:         <% if @document.is_public? %>
+    19: 
+    20:         <td><%= document.title %></td>
+    21:         <td><%= document.text %></td>
+  
+app/views/documents/index.html.erb:18:in `block in _app_views_documents_index_html_erb___4521541582756364426_34421820'
+app/views/documents/index.html.erb:16:in `_app_views_documents_index_html_erb___4521541582756364426_34421820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:27:20 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered documents/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 566ms (Views: 564.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-05-30 22:27:26 -0400
+Started GET "/auth/sign_in" for 127.0.0.1 at 2017-05-30 22:27:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 194ms (Views: 152.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 22:27:27 -0400
+Started GET "/auth/sign_in" for 127.0.0.1 at 2017-05-30 22:27:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/sign_in" for 127.0.0.1 at 2017-05-30 22:27:29 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8bx/GbbY6/FWjzl4e3T89Qw1aQHzOhLWMX+UkE92j7tTlLBVF7quV0nYkvClsshvBC+9hGnr3iCtep0oUrFOAw==", "person"=>{"email"=>"diego@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["email", "diego@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (4.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.8ms)[0m  [1m[33mUPDATE "people" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["current_sign_in_at", "2017-05-31 02:27:29.606454"], ["last_sign_in_at", "2017-05-31 01:45:02.454575"], ["sign_in_count", 7], ["updated_at", "2017-05-31 02:27:29.612461"], ["id", 5]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people
+Completed 302 Found in 337ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 22:27:29 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:27:30 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/4" for 127.0.0.1 at 2017-05-30 22:27:34 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (2.0ms)
+Completed 200 OK in 94ms (Views: 88.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:27:35 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 22:27:37 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:27:38 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (50.9ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 150ms (Views: 141.1ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/assignments/1" for 127.0.0.1 at 2017-05-30 22:27:46 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M9p4OCmL0azzDbjQZvj9Uj5KGBfTK2WJd7JADWCwmP3wqzHVenrDurdM7vA93bvt/Z9u46OeRI7a5oJDcOuX9w==", "id"=>"1"}
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "assignments" WHERE "assignments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:27:47 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (1.3ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (22.6ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/assignments/2" for 127.0.0.1 at 2017-05-30 22:27:49 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6euSSUXfXjCAQh5hoXe/CFbnVqX+QdGaOQDunQgzrygqmtukFi5MJsQDSEH6Uvm3lTIgUY708J2UVCzTGGigIg==", "id"=>"2"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[31mDELETE FROM "assignments" WHERE "assignments"."id" = ?[0m  [["id", 2]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 15ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:27:49 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (3.3ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 116ms (Views: 109.9ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/assignments/3" for 127.0.0.1 at 2017-05-30 22:27:51 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s1lpq0HVY4a704KCzxZW0adXx+08LMgjBNutMyDEBjlwKCBGEiRxkP+S1KKUMxBuZIKxGUyZ6SSpj299MJ8JMw==", "id"=>"3"}
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[31mDELETE FROM "assignments" WHERE "assignments"."id" = ?[0m  [["id", 3]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 17ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:27:51 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.2ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/assignments/4" for 127.0.0.1 at 2017-05-30 22:27:53 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eTa3qNOaoAgV/rDMCYhMEhGZocGGxqjntmgMyw1Rj0q6R/5FgGuyHlG/5uxSrQqt0kzXNfZzieAbPM6FHQqAQA==", "id"=>"4"}
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[31mDELETE FROM "assignments" WHERE "assignments"."id" = ?[0m  [["id", 4]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 12ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:27:53 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navbar.html.erb (5.5ms)
+Completed 200 OK in 133ms (Views: 128.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:27:54 -0400
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (3.0ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered managements/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 124ms (Views: 110.7ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/managements/1" for 127.0.0.1 at 2017-05-30 22:27:56 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"of+MdQsQWW7W92BTV3KE7R2ZeXt+Eyv8XEmm7yS8QbRijsWYWOFLeJK2NnMMV8JS3kwPjw6mCvvxHWShNOdOvg==", "id"=>"1"}
+  [1m[36mManagement Load (2.2ms)[0m  [1m[34mSELECT  "managements".* FROM "managements" WHERE "managements"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "managements" WHERE "managements"."id" = ?[0m  [["id", 1]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/managements
+Completed 302 Found in 16ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:27:57 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (1.4ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDocument Load (1.5ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered managements/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 118ms (Views: 112.6ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/managements/2" for 127.0.0.1 at 2017-05-30 22:27:59 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NxNucBWw12phSCgwF16x9Oej/58NTJSNHdbwsQhuSq70YiedRkHFfCUJfhBMe/dLJHaJa335tYqwgjL/GDVFpA==", "id"=>"2"}
+  [1m[36mManagement Load (0.1ms)[0m  [1m[34mSELECT  "managements".* FROM "managements" WHERE "managements"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[31mDELETE FROM "managements" WHERE "managements"."id" = ?[0m  [["id", 2]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/managements
+Completed 302 Found in 13ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:27:59 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (0.2ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  Rendered managements/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 107ms (Views: 106.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:28:00 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 95ms (Views: 91.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:28:01 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (0.2ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  Rendered managements/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (4.6ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/managements/new" for 127.0.0.1 at 2017-05-30 22:28:03 -0400
+  [1m[36mPerson Load (6.0ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#new as HTML
+  Rendering managements/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered managements/_form.html.erb (12.0ms)
+  Rendered managements/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 147ms (Views: 144.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:28:06 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (3.7ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+Completed 200 OK in 97ms (Views: 91.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:28:07 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-30 22:28:08 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.8ms)
+  Rendered documents/new.html.erb within layouts/application (12.2ms)
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.9ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:28:10 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 151ms (Views: 149.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-05-30 22:28:11 -0400
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-05-30 22:28:12 -0400
+  [1m[36mPerson Load (4.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (2.6ms)
+  Rendered categories/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_navbar.html.erb (5.2ms)
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:28:14 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 105ms (Views: 102.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-30 22:35:34 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 116ms (Views: 114.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-30 22:35:37 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (7.7ms)
+  Rendered documents/new.html.erb within layouts/application (9.7ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.1ms)
+Completed 200 OK in 106ms (Views: 104.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:35:38 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3" for 127.0.0.1 at 2017-05-30 22:35:42 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-30 22:35:43 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (6.1ms)
+  Rendered documents/edit.html.erb within layouts/application (7.4ms)
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.3ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:35:44 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navbar.html.erb (2.7ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-30 22:35:47 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_navbar.html.erb (2.3ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-05-30 22:35:47 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2017-05-30 22:35:48 -0400
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.4ms)
+  Rendered categories/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2017-05-30 22:35:50 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (3.9ms)
+Completed 200 OK in 153ms (Views: 152.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 22:35:52 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navbar.html.erb (13.7ms)
+Completed 200 OK in 114ms (Views: 113.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2017-05-30 22:35:53 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#new as HTML
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (2.8ms)
+  Rendered people/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2017-05-30 22:35:55 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navbar.html.erb (4.6ms)
+Completed 200 OK in 97ms (Views: 96.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:35:56 -0400
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (5.5ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assignments/new" for 127.0.0.1 at 2017-05-30 22:35:57 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#new as HTML
+  Rendering assignments/new.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered assignments/_form.html.erb (12.8ms)
+  Rendered assignments/new.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 116ms (Views: 112.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:35:58 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:36:00 -0400
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (0.1ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  Rendered managements/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/managements/new" for 127.0.0.1 at 2017-05-30 22:36:01 -0400
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#new as HTML
+  Rendering managements/new.html.erb within layouts/application
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  Rendered managements/_form.html.erb (9.4ms)
+  Rendered managements/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_navbar.html.erb (9.4ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/managements" for 127.0.0.1 at 2017-05-30 22:36:02 -0400
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ManagementsController#index as HTML
+  Rendering managements/index.html.erb within layouts/application
+  [1m[36mManagement Load (0.2ms)[0m  [1m[34mSELECT "managements".* FROM "managements"[0m
+  Rendered managements/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 156ms (Views: 154.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:36:04 -0400
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.1ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (9.0ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assignments/new" for 127.0.0.1 at 2017-05-30 22:36:05 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#new as HTML
+  Rendering assignments/new.html.erb within layouts/application
+  [1m[36mDocument Load (5.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered assignments/_form.html.erb (8.9ms)
+  Rendered assignments/new.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 124ms (Views: 112.6ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/assignments" for 127.0.0.1 at 2017-05-30 22:36:11 -0400
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W9rN5w9Vg8pdyh9LDYIFOa6drLALm6B/D5lj6qgsLFJQbYgwMRKDDLea9Cw5sKxwPBvhiQVCK+qqc8soIG01pg==", "assignment"=>{"document_id"=>"3", "category_id"=>"1"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "assignments" ("document_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["document_id", 3], ["category_id", 1], ["created_at", "2017-05-31 02:36:11.202899"], ["updated_at", "2017-05-31 02:36:11.202899"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/assignments/5
+Completed 302 Found in 17ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/assignments/5" for 127.0.0.1 at 2017-05-30 22:36:11 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAssignment Load (0.0ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering assignments/show.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered assignments/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (5.1ms)
+Completed 200 OK in 104ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:36:12 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (5.2ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (0.0ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 119ms (Views: 112.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assignments/5/edit" for 127.0.0.1 at 2017-05-30 22:36:14 -0400
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAssignment Load (0.0ms)[0m  [1m[34mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering assignments/edit.html.erb within layouts/application
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered assignments/_form.html.erb (7.7ms)
+  Rendered assignments/edit.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+Completed 200 OK in 111ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2017-05-30 22:36:18 -0400
+  [1m[36mPerson Load (1.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by AssignmentsController#index as HTML
+  Rendering assignments/index.html.erb within layouts/application
+  [1m[36mAssignment Load (0.2ms)[0m  [1m[34mSELECT "assignments".* FROM "assignments"[0m
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered assignments/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (6.8ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.3ms)
+
+

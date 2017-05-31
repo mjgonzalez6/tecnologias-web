@@ -23,6 +23,11 @@
     <%= f.text_area :text %>
   </div>
 
+  <div class="field">
+    <%= f.label :es_publico? %>
+    <%= f.select :is_public, options_for_select([["Si" , true],["No",false]]) %>
+  </div>
+
   <div class="actions">
     <%= f.button :submit => "", class: "btn btn-success"  %>
   </div>
