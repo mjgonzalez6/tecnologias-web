@@ -15887,3 +15887,590 @@ Processing by DocumentsController#show as HTML
 Completed 200 OK in 98ms (Views: 92.2ms | ActiveRecord: 4.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-05-31 01:35:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (86.1ms)
+  Rendered layouts/_navbar.html.erb (6.2ms)
+Completed 200 OK in 724ms (Views: 684.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:36:17 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 128ms (Views: 125.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:36:19 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (44.6ms)
+  Rendered documents/edit.html.erb within layouts/application (46.7ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.8ms)
+Completed 200 OK in 151ms (Views: 145.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:36:23 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 103ms (Views: 99.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/documents/3" for 127.0.0.1 at 2017-05-31 01:36:25 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:36:36 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (10.6ms)
+  Rendered documents/edit.html.erb within layouts/application (13.2ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 118ms (Views: 115.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:37:55 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (6.6ms)
+  Rendered documents/edit.html.erb within layouts/application (8.4ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:38:35 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (10.3ms)
+  Rendered documents/edit.html.erb within layouts/application (15.3ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.6ms)
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:40:30 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.6ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.9ms)
+  Rendered documents/edit.html.erb within layouts/application (6.9ms)
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 113ms (Views: 108.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:40:46 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.6ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.0ms)
+  Rendered documents/edit.html.erb within layouts/application (9.6ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.5ms)
+Completed 200 OK in 120ms (Views: 114.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:41:02 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.4ms)
+  Rendered documents/edit.html.erb within layouts/application (9.1ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.4ms)
+Completed 200 OK in 96ms (Views: 93.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:41:39 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.0ms)
+  Rendered documents/edit.html.erb within layouts/application (5.9ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (12.8ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:41:42 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.5ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (19.2ms)
+  Rendered documents/edit.html.erb within layouts/application (31.9ms)
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.2ms)
+Completed 200 OK in 124ms (Views: 120.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:42:17 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (7.3ms)
+  Rendered documents/edit.html.erb within layouts/application (8.9ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:42:52 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (8.6ms)
+  Rendered documents/edit.html.erb within layouts/application (9.8ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.0ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:43:21 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3" for 127.0.0.1 at 2017-05-31 01:43:23 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.4ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (2.2ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:43:24 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (4.2ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:43:26 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (6.7ms)
+  Rendered documents/edit.html.erb within layouts/application (8.6ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.9ms)
+Completed 200 OK in 129ms (Views: 126.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:43:27 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (1.7ms)
+Completed 200 OK in 106ms (Views: 103.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-31 01:43:32 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.8ms)
+  Rendered documents/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong argument type nil (expected String)):
+    28:   <div class="col-md-6">
+    29:     <h1>Markdown:</h1>
+    30: 
+    31:       <%= markdown(@document.text) %>
+    32:   </p>
+    33:   </div>
+    34: 
+  
+app/helpers/application_helper.rb:7:in `markdown'
+app/views/documents/_form.html.erb:31:in `block in _app_views_documents__form_html_erb___1400538640669387036_70085446216660'
+app/views/documents/_form.html.erb:1:in `_app_views_documents__form_html_erb___1400538640669387036_70085446216660'
+app/views/documents/new.html.erb:3:in `_app_views_documents_new_html_erb__1561691413678317255_70085446263000'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:44:18 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navbar.html.erb (2.5ms)
+Completed 200 OK in 93ms (Views: 84.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:45:57 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (10.3ms)
+  Rendered documents/edit.html.erb within layouts/application (19.0ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.8ms)
+Completed 200 OK in 116ms (Views: 112.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/new" for 127.0.0.1 at 2017-05-31 01:46:02 -0400
+Processing by DocumentsController#new as HTML
+  Rendering documents/new.html.erb within layouts/application
+  Rendered documents/_form.html.erb (27.4ms)
+  Rendered documents/new.html.erb within layouts/application (30.9ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 129ms (Views: 126.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents" for 127.0.0.1 at 2017-05-31 01:46:03 -0400
+Processing by DocumentsController#index as HTML
+  Rendering documents/index.html.erb within layouts/application
+  [1m[36mDocument Load (0.3ms)[0m  [1m[34mSELECT "documents".* FROM "documents"[0m
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered documents/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:46:05 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.3ms)
+  Rendered documents/edit.html.erb within layouts/application (9.9ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.4ms)
+Completed 200 OK in 124ms (Views: 120.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:46:25 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (6.3ms)
+  Rendered documents/edit.html.erb within layouts/application (16.2ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:46:55 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.8ms)
+  Rendered documents/edit.html.erb within layouts/application (7.2ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.5ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:48:46 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.7ms)
+  Rendered documents/edit.html.erb within layouts/application (16.8ms)
+  [1m[36mPerson Load (0.8ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.2ms)
+Completed 200 OK in 90ms (Views: 87.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:49:02 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (12.0ms)
+  Rendered documents/edit.html.erb within layouts/application (15.8ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (8.6ms)
+Completed 200 OK in 132ms (Views: 129.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:50:35 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (6.4ms)
+  Rendered documents/edit.html.erb within layouts/application (9.5ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.6ms)
+Completed 200 OK in 117ms (Views: 112.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:51:02 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.5ms)
+  Rendered documents/edit.html.erb within layouts/application (5.6ms)
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.4ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:51:46 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.9ms)
+  Rendered documents/edit.html.erb within layouts/application (6.2ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.0ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:52:05 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.9ms)
+  Rendered documents/edit.html.erb within layouts/application (7.8ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.4ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:52:13 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.6ms)
+  Rendered documents/edit.html.erb within layouts/application (13.1ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:53:07 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.1ms)
+  Rendered documents/edit.html.erb within layouts/application (6.0ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.8ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:53:58 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.1ms)
+  Rendered documents/edit.html.erb within layouts/application (5.6ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:55:04 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.2ms)
+  Rendered documents/edit.html.erb within layouts/application (22.4ms)
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (7.6ms)
+Completed 200 OK in 120ms (Views: 117.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:55:06 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.1ms)
+  Rendered documents/edit.html.erb within layouts/application (5.6ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:55:38 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.8ms)
+  Rendered documents/edit.html.erb within layouts/application (8.2ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (5.8ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:55:41 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.8ms)
+  Rendered documents/edit.html.erb within layouts/application (5.9ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.7ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:56:14 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (12.4ms)
+  Rendered documents/edit.html.erb within layouts/application (15.2ms)
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:56:27 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.9ms)
+  Rendered documents/edit.html.erb within layouts/application (11.5ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.3ms)
+Completed 200 OK in 116ms (Views: 113.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:56:40 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (14.4ms)
+  Rendered documents/edit.html.erb within layouts/application (17.3ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.7ms)
+Completed 200 OK in 119ms (Views: 103.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:57:22 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (3.2ms)
+  Rendered documents/edit.html.erb within layouts/application (13.8ms)
+  [1m[36mPerson Load (9.7ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (14.6ms)
+Completed 200 OK in 137ms (Views: 126.1ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:57:44 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (4.1ms)
+  Rendered documents/edit.html.erb within layouts/application (12.0ms)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (6.2ms)
+Completed 200 OK in 127ms (Views: 124.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:57:56 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (2.7ms)
+  Rendered documents/edit.html.erb within layouts/application (12.9ms)
+  [1m[36mPerson Load (2.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (9.6ms)
+Completed 200 OK in 112ms (Views: 107.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:58:27 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (12.1ms)
+  Rendered documents/edit.html.erb within layouts/application (14.7ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (4.5ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/documents/3/edit" for 127.0.0.1 at 2017-05-31 01:59:11 -0400
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (7.6ms)
+  Rendered documents/edit.html.erb within layouts/application (11.0ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (3.2ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.3ms)
+
+
