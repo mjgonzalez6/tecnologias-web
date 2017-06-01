@@ -9,18 +9,21 @@ class DocumentsController < ApplicationController
   def index
     if !params[:search].nil?
       @documents = Document.where("title like ?", "%#{params[:search]}%")
-   else
+    else
       @documents = Document.all
+    end
+    if !person_signed_in?
+     @documents = Document.where("is_public = ?", true)
+     if params[:search]
+       @documents = Document.where("is_public  = ?", true).search(params[:search]).order("created_at DESC")
+     else
+       @documents = Document.where("is_public  = ?", true).order("created_at DESC")
+     end
     end
   end
 
-  def publico
-    
-     if @document.is_public?
-       format.html { render :show}
-     else
-     end
-  end
+
+
 
 
   # GET /documents/1
