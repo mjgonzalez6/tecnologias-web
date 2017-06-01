@@ -3,25 +3,20 @@
 <table>
   <thead class = "text">
 <div class="col-md-6">
-  <h1>Documents:</h1>
+  <h1>Documents</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">Title: <%= @document.title %></div>
+  <div class="panel-body"><%= @document.text %></div>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @document.title %>
-</p>
-
-
-<p>
-  <strong>Text:</strong>
-  <%= @document.text %>
-</p>
 </thead>
 <thead>
-
 <div class="col-md-6">
-  <h1>Markdown:</h1>
-
-    <%= markdown(@document.text) %>
+  <h1>Markdown</h1>
+  <div class="panel panel-default">
+    <div class="panel-heading">Title: <%= @document.title %></div>
+    <div class="panel-body"><%= markdown(@document.text) %></div>
+  </div>
 </p>
 </div>
 </thead>
