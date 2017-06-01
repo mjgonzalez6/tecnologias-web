@@ -28,6 +28,10 @@
 
  .table > thead > tr > th {
   background-color:$brand-primary;
-
   color: white;
+  word-wrap: break-word;
+
 }
+ table{
+   width: 100%;
+ }
