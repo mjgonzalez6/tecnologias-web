@@ -20964,3 +20964,39 @@ Processing by DocumentsController#index as HTML
 Completed 200 OK in 77ms (Views: 70.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/documents/2/edit" for 127.0.0.1 at 2017-06-01 19:25:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DocumentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering documents/edit.html.erb within layouts/application
+  Rendered documents/_form.html.erb (41.4ms)
+  Rendered documents/edit.html.erb within layouts/application (44.3ms)
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_navbar.html.erb (24.6ms)
+Completed 200 OK in 946ms (Views: 904.2ms | ActiveRecord: 7.3ms)
+
+
+Started PATCH "/documents/2" for 127.0.0.1 at 2017-06-01 19:25:18 -0400
+Processing by DocumentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"650owlCITKPqm9JU5ldICgYvpBUsGpbohAm40TpwFXd/AbaVzFx3TUcb0nj+Z45Vwve77ei+70NnetBL67gobA==", "document"=>{"title"=>"Privadoooooooooooooooooooooooooooooooooo", "text"=>"ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "is_public"=>"true"}, "button"=>"", "id"=>"2"}
+  [1m[36mDocument Load (0.2ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDocument Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "documents" WHERE "documents"."title" = ? AND ("documents"."id" != ?) LIMIT ?[0m  [["title", "Privadoooooooooooooooooooooooooooooooooo"], ["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "documents" SET "text" = ?, "is_public" = ?, "updated_at" = ? WHERE "documents"."id" = ?[0m  [["text", "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"], ["is_public", "t"], ["updated_at", "2017-06-01 23:25:18.500018"], ["id", 2]]
+  [1m[35m (56.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/documents/2
+Completed 302 Found in 91ms (ActiveRecord: 56.8ms)
+
+
+Started GET "/documents/2" for 127.0.0.1 at 2017-06-01 19:25:18 -0400
+Processing by DocumentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDocument Load (0.1ms)[0m  [1m[34mSELECT  "documents".* FROM "documents" WHERE "documents"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering documents/show.html.erb within layouts/application
+  [1m[36mPerson Load (3.0ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered documents/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 3.1ms)
+
+

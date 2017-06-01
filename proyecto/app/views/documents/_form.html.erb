@@ -26,10 +26,12 @@
     <%= f.select :is_public, options_for_select([["Si" , true],["No",false]]) %>
   </div>
 
+  <div class = "actions col-md-3 ">
+      <%= f.button :submit => "", class: "btn btn-success"  %>
+  </div>
+
   <div class="row  text-center">
-      <div class = "actions col-md-3 ">
-          <%= f.button :submit => "", class: "btn btn-success"  %>
-      </div>
+
       <div class = "col-md-3 ">
         <%= link_to 'Show', @document,class: "btn btn-primary"   %>
       </div>
