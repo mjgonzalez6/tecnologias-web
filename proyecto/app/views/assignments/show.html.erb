@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @assignment.document %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @assignment.category %>
+</p>
+
+<%= link_to 'Edit', edit_assignment_path(@assignment), class: "btn btn-primary"  %> |
+<%= link_to 'Back', assignments_path ,class: "btn btn-danger" %>

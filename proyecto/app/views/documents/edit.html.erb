@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+<div class="col-md-6">
+  <h1>Editing Document</h1>
+
+
+</div>
+
+<div class="col-md-6">
+  <h1>Markdown:</h1>
+
+    <%= markdown(@document.text) %>
+</div>
+</div>
+
+<div class="row justify-content-md-center">
+    <div class = "col">
+      <%= render 'form', document: @document %>
+    </div>
+    <div class = "col">
+      <%= link_to 'Show', @document,class: "btn btn-primary"   %>
+    </div>
+    <div class = "col">
+      <%= link_to 'Back', documents_path, class: "btn btn-danger"  %>
+    </div>
+  </div>
+</div>
