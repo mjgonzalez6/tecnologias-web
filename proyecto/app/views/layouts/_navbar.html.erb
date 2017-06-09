@@ -33,7 +33,7 @@
           <% end %>
 
         </div>
-        
+
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -41,7 +41,7 @@
             <% if person_signed_in? %>
               <%= current_person.to_s %>
             <% else %>
-              New here?
+              Enter
             <% end %>
             <span class="caret"></span>
           </a>
@@ -49,14 +49,12 @@
             <% if person_signed_in? %>
               <li>
                 <%= link_to('Logout', destroy_person_session_path, :method => :delete) %>
-              </li>
-              <li>
-                <%= link_to "Change your password", edit_person_registration_path %>
-              </li>
+              </li>            
+                <!--  <li>
+                <%= link_to "Change your password", edit_person_password_path %>
+              </li>-->
+
             <% else %>
-              <li>
-                <%= link_to('Register', new_person_registration_path) %>
-              </li>
               <li>
                 <%= link_to('Login', new_person_session_path) %>
               </li>
