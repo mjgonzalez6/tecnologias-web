@@ -5,6 +5,9 @@ class ManagementsController < ApplicationController
   # GET /managements.json
   def index
     @managements = Management.all
+  #  if person_signed_in?
+  #    @managements = Management.where("person_id = ?", current_person.id )
+  #  end
   end
 
   # GET /managements/1
