@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170609155838) do
+ActiveRecord::Schema.define(version: 20170613210506) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer  "document_id"
@@ -63,6 +63,17 @@ ActiveRecord::Schema.define(version: 20170609155838) do
     t.boolean  "admin",                  default: false
     t.index ["email"], name: "index_people_on_email", unique: true
     t.index ["reset_password_token"], name: "index_people_on_reset_password_token", unique: true
+  end
+
+  create_table "suggestions", force: :cascade do |t|
+    t.integer  "document_id"
+    t.integer  "person_id"
+    t.text     "text"
+    t.string   "status"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["document_id"], name: "index_suggestions_on_document_id"
+    t.index ["person_id"], name: "index_suggestions_on_person_id"
   end
 
 end

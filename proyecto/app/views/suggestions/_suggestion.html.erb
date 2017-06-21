@@ -1,0 +1,7 @@
+<div id="suggestions_part">
+  <% @suggestions.each do |suggestion| %>
+   <%= render suggestion%>
+        which is the same as
+   <%= render partial:"suggestions/suggestion", locals:{suggestion:suggestion} %>
+  <% end %>
+</div>

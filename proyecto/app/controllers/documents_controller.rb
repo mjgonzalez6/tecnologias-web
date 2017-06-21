@@ -23,12 +23,9 @@ class DocumentsController < ApplicationController
   end
 
 
-
-
-
   # GET /documents/1
   # GET /documents/1.json
-  def show
+  def show    
   end
 
   # GET /documents/new

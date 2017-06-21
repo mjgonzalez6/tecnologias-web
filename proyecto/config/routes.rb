@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :suggestions
   resources :documents
   root to: 'documents#index'
   devise_for :people, path: 'auth'
