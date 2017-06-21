@@ -53,11 +53,19 @@
  }
 
  input{
-     color: #393f4d;
+     color: black;
  }
 
 option{
-    color: #393f4d;
+
+    color: black;
+}
+select {
+  color: black;
+}
+
+textarea {
+    color:black;
 }
  /* navbar */
 .navbar-default {
