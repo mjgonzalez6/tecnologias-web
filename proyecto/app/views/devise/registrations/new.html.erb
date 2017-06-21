@@ -4,7 +4,7 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <%= render 'people/form', person: @person, form_params: [resource, as: resource_name, url: registration_path(resource_name)], submit_btn_text: 'SignUp' %>
+    <% controller.redirect_to documents_path %>
   </div>
 </div>
 
