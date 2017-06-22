@@ -20,5 +20,13 @@
   <%= @suggestion.status %>
 </p>
 
+<p>
+<button type="button" class="btn btn-primary">Aprobar</button>
+<button type="button" class="btn btn-primary">Rechazar</button>
+<button type="button" class="btn btn-primary">Comentar</button>
+</p>
+
+<p>
 <%= link_to 'Edit', edit_suggestion_path(@suggestion) %> |
 <%= link_to 'Back', suggestions_path %>
+</p>

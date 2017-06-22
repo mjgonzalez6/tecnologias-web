@@ -5,6 +5,11 @@ class SuggestionsController < ApplicationController
   # GET /suggestions.json
   def index
     @suggestions = Suggestion.all
+    if params[:search]
+      @suggestions = Suggestion.all.search(params[:search]).order("created_at DESC")
+    else
+      @suggestions = Suggestion.all.order("created_at ASC")
+end
   end
 
   # GET /suggestions/1
