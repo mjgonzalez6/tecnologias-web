@@ -1,12 +1,14 @@
 class DocumentsController < ApplicationController
-  before_action :set_document, only: [:show, :edit, :update, :destroy]
+  before_action :set_document, only: [:show, :edit, :update, :destroy, :favourite_button]
 
   # GET /documents
   # GET /documents.json
   #def index
   #  @documents = Document.all
   #end
+
   def index
+    @current_user = current_person
     if !params[:search].nil?
       @documents = Document.where("title like ?", "%#{params[:search]}%")
     else
@@ -22,10 +24,17 @@ class DocumentsController < ApplicationController
     end
   end
 
+  def favourite_button
+    @document.dislike(params[:person_id])
+    favourite = @document.user_favourite?(params[:person_id])
+    favourite_number = @document.like_count
+    render :json => { :favourite => favourite, :count => favourite_number }
+  end
+
 
   # GET /documents/1
   # GET /documents/1.json
-  def show    
+  def show
   end
 
   # GET /documents/new

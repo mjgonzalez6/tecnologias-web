@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170613210506) do
+ActiveRecord::Schema.define(version: 20170621195802) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer  "document_id"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 20170613210506) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean  "is_public"
+  end
+
+  create_table "favourites", force: :cascade do |t|
+    t.integer  "person_id"
+    t.integer  "document_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["document_id"], name: "index_favourites_on_document_id"
+    t.index ["person_id"], name: "index_favourites_on_person_id"
   end
 
   create_table "managements", force: :cascade do |t|

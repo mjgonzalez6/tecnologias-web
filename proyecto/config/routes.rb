@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :favourites
   resources :suggestions
-  resources :documents
+  resources :documents do
+    collection do
+      get 'favourite_button'
+    end
+
+  end
+
   root to: 'documents#index'
   devise_for :people, path: 'auth'
   devise_scope :person do

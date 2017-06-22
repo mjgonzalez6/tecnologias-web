@@ -84,3 +84,22 @@ textarea {
 .navbar-default .navbar-nav > li > a {
     color: #393f4d;
 }
+
+button .active{
+  color: $brand-danger;
+}
+
+button .disable{
+  color: $gray;
+}
+
+.inlinear {
+  display: inline-block;
+}
+
+.putright {
+  position: absolute;
+    right: 0px;
+    width: 200px;
+
+}

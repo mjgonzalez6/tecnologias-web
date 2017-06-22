@@ -1,21 +1,80 @@
 <p id="notice"><%= notice %></p>
 
-<table>
-<thead>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Document</h1>
+    </div>
+    <div class="col-md-6 putright">
 
-  <h1>Document</h1>
+      <h4 class="inlinear" >Likes</h4><% if person_signed_in? %>
+        <button class="btn btn-link inlinear" style="margin-bottom: 5px;" onclick="like_button_clicked(<%= current_person.id %>, <%= @document.id %>)" id="like_button">
+          <span class="glyphicon glyphicon-heart<% if @document.user_favourite?(current_person.id) %> active<% else %> disable<% end %>" id="like_button_icon"></span>
+          <span id="like_count_indicator"><%= @document.total_favourites %></span>
+        </button>
+      <% else %>
+        <button class="btn btn-link inlinear" style="margin-bottom: 5px;" disabled>
+          <span class="glyphicon glyphicon-heart"></span>
+          <span id="like_count_indicator"><%= @document.total_favourites %></span>
+        </button>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
   <div class="panel panel-default">
-    <div class="panel-heading">Title: <%= @document.title %></div>
+    <div class="panel-heading">Title: <%= @document.title %>
+
+    </div>
     <div class="panel-body"><%= markdown(@document.text) %></div>
   </div>
 
-
-</thead>
-</table>
 <%if person_signed_in? %>
-
 
 <%= link_to 'Edit', edit_document_path(@document) , class: "btn btn-primary" %>
 <% end %>
 <%= link_to 'Back', documents_path, class: "btn btn-danger"  %>
-</div>
+
+<script>
+function like_button_clicked(user_id, document_id) {
+        console.log("print1");
+        $.ajax({
+            type:"GET",
+            url:"<%= favourite_button_documents_path %>",
+            dataType:"json",
+            data: {person_id: user_id, id: document_id},
+            success: function(result){
+                console.log(result.favourite);
+                disable_like_button(result.favourite);
+                enable_like_count(result.count);
+            }
+        });
+        window.location.reload();
+    }
+
+    function disable_like_button(favourite) {
+      console.log("print 2")
+
+        var icon = $('#like_button_icon');
+        var icon_class = 'glyphicon glyphicon-heart';
+        if (!favourite) {
+            icon_class += " disable";
+
+        }else{
+          console.log("else");
+          icon_class += " active";
+        }
+        icon.attr('class', icon_class);
+    }
+
+    function enable_like_count(count) {
+        var indicator = $('#like_count_indicator');
+        indicator.html(count)
+    }
+</script>
