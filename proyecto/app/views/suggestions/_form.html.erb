@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= f.label :status %>
-    <%= f.text_field :status , :class => 'text_field', :disabled => true , :value => "Pending" %>
+    <%= f.select :status, options_for_select([Suggestion::STATUS_OPTIONS[0]]) %>
   </div>
 
   <div class="actions">

@@ -12,7 +12,7 @@ class Suggestion < ApplicationRecord
  #attr_readonly :status
 
  def self.search(search)
-   
+
    where("status LIKE ?", "%#{search}%")
 end
 

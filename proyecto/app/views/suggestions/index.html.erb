@@ -9,7 +9,7 @@
 <div class= "col-md-6 putright">
 
 
-<div class="search-bar">
+<div class="search-bar inlinear">
   <%= form_tag(suggestions_url, :method => "get", id: "search-form") do %>
       <%= select_tag :search, options_for_select([Suggestion::STATUS_OPTIONS[0], Suggestion::STATUS_OPTIONS[1], Suggestion::STATUS_OPTIONS[2]]) %>
       <%= submit_tag "Search", :name => nil, :class => 'btn btn-default btn-sm' %>
