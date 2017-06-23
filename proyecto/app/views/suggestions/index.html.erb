@@ -1,8 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Suggestions</h1>
 
-<table>
+<div class ="row">
+  <div class="col-md-6">
+    <h1>Suggestions</h1>
+<%= link_to 'View All', suggestions_path, class: 'navbar-brand' %>
+</div>
+<div class= "col-md-6 putright">
+
+
+<div class="search-bar">
+  <%= form_tag(suggestions_url, :method => "get", id: "search-form") do %>
+      <%= select_tag :search, options_for_select([Suggestion::STATUS_OPTIONS[0], Suggestion::STATUS_OPTIONS[1], Suggestion::STATUS_OPTIONS[2]]) %>
+      <%= submit_tag "Search", :name => nil, :class => 'btn btn-default btn-sm' %>
+  <% end %>
+</div>
+
+</div>
+
+<table class = "table table-bordered table-hover">
   <thead>
     <tr>
       <th>Document</th>

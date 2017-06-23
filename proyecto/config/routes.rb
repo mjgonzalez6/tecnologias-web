@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :comments
+  resources :suggestion_comments
   devise_scope :user do
     get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
     get "/sign_up" => "devise/registrations#new", as: "new_user_registration" # custom path to sign_up/registration
   end
-  resources :suggestions
+
   resources :documents
   root to: 'documents#index'
   devise_for :people #, path: 'auth'
@@ -16,6 +18,12 @@ Rails.application.routes.draw do
   resources :managements
   resources :categories
   resources :people
+  resources :suggestions
+
+
+
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end
