@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :comments
   resources :suggestion_comments
   devise_scope :user do
@@ -6,13 +7,17 @@ Rails.application.routes.draw do
     get "/sign_up" => "devise/registrations#new", as: "new_user_registration" # custom path to sign_up/registration
   end
 
+=======
+
+  resources :suggestions
+>>>>>>> 0f94a5cfacbcee5706c6c9ab875deb4c756dfa81
   resources :documents
   root to: 'documents#index'
-  devise_for :people #, path: 'auth'
-  #devise_scope :person do
-  #  get 'auth', to: 'devise/registrations#new'
+  devise_for :people, path: 'auth'
+  devise_scope :person do
+    get 'auth', to: 'devise/registrations#new'
 
-  #end
+  end
   authenticate :person do
   resources :assignments
   resources :managements
